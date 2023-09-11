@@ -35,7 +35,7 @@ function App() {
           {quote?.text}
           <span>"</span>
         </h3>
-        <i>~{quote?.author}</i>
+        <i>~{(quote?.author).split(',')[0]}</i>
       </section>
       <button className='button-5' onClick={getNewQuote}>Refresh</button>
     </div>
